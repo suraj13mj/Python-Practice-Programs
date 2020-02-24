@@ -12,6 +12,5 @@ N=int(input("Enter the value of N:"))
 sm=seriesSum(N)
 print("Sum of the series :")
 for i in range(1,N+1):
-    term="1/"+str(i)
-    print(term,sep='+',end=" ")
+    print("1/"+str(i),end=" + ")
 print("\n",sm)

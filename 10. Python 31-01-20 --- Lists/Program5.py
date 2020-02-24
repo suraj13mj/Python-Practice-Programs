@@ -3,7 +3,10 @@
 
 lst=[[25,13],[18,2],[19,36],[17,3]]
 
-def sortby(el):				#sorts based on column 2
-	return(el[1])
+def sortby(element):				#sorts based on column 2
+	return(element[1])
 
-lst.sort(key=sortby(lst))
+
+print("Before Sorting:",lst)
+lst.sort(key=sortby)				
+print("After Sorting:",lst)
