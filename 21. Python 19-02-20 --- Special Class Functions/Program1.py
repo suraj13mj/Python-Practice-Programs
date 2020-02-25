@@ -17,6 +17,7 @@ class Employee:
 		s=""+"\nEmpNo:"+str(self.empno)+"\nName:"+self.empname+"\nSalary:"+str(self.empsalary)+"\n"       
 		return(s)
     
+    
 
 
 emp=[]       #List
