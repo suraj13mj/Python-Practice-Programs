@@ -1,18 +1,62 @@
-#Program to store Employee details in a Dictionary
+#Program to demonstrate to Dictionary methods and functions
+
+
+dict={1:"Violet",2:"Indigo",3:"Blue",4:"Green",5:"Yellow",6:"Orange",7:"Red"}
+print(dict)
+
+
+print("\nAdding an element into the Dictionary")
+dict[8]="Pink"
+print(dict)
 
 
 
-emp={}
-
-emp["name"]=input("Enter Employee Name:")
-emp["eno"]=int(input("Enter Employee No:"))
-emp["basic"]=int(input("Enter Basic Salary:"))
-emp["hra"]=0.1*emp["basic"]
-emp["da"]=0.73*emp["basic"]
-emp["gross"]=emp["basic"]+emp["hra"]+emp["da"]
-emp["tax"]=0.3*emp["gross"]
-emp["net"]=emp["gross"]-emp["tax"]
+print("\nPoping an element from Dictionary")
+(key,value)=dict.popitem()
+print("Popped key:",key)
+print("Popped value:",value)
 
 
-print("\nEmployee Details are:")
-print("\nName:"+emp["name"],"\nEmployee No:"+str(emp["eno"]),"\nBasic Salary:"+str(emp["basic"]),"\nHRA:"+str(emp["hra"]),"\nDA:"+str(emp["da"]),"\nGross Salary:"+str(emp["gross"]),"\nIncome Tax"+str(emp["tax"]),"\nNet Salary:"+str(emp["net"]))
+
+key=int(input("\nEnter the key to pop an element:"))
+value=dict.pop(key)			
+#OR del dict[key]
+print("Popped value:",value)
+
+
+
+print("\nModifying Dictionary value")
+key=int(input("Enter the key of the value to be modified:"))
+dict[key]=input("Enter the new value:")
+print(dict)
+
+
+
+print("\nLength of the Dictionary is",len(dict))
+
+
+
+
+print("\nSearching in Dictionary")
+key=int(input("Enter the key to be searched:"))
+if key in dict:
+	print(key,"is present in Dictionary, it's value is",dict[key])
+else:
+	print(key,"not found in Dictionary")
+
+"""  OR
+if key not in dict:
+	print(key,"not found in Dictionary")
+else:
+	print(key,"is present in Dictionary, it's value is",dict[key])
+"""	
+
+
+
+print("\nDisplaying all keys in the Dictionary:",dict.keys())
+
+
+
+print("\nDisplaying all the values in the Dictionary:",dict.values())
+
+
