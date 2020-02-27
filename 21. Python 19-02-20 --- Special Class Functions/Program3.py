@@ -10,13 +10,13 @@ class Student:
 		self.rollno=int(input("\nEnter Rollno:"))
 		self.name=input("Enter Name:")
 		self.per=float(input("Enter Percentage:"))
-
+	
 	def __lt__(self,s2):
 		if self.per<s2.per:
 			return True
 		else:
 			return False
-
+	
 	def __str__(self):
 		return "\nRollNo:"+str(self.rollno)+"\nName:"+self.name+"\nPercentage:"+str(self.per)
 

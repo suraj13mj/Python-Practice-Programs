@@ -1,6 +1,16 @@
-#Program to demostrate Multi-level Inheritance in Python with classes Shape, Rectangle and Box
-#Shape <---- Rectange <---- Box
+"""
+Program to demostrate Multi-level Inheritance in Python with classes Shape, Rectangle and Box
+Shape <---- Rectange <---- Box
 
+                     Shape
+					   |
+		               |
+		            Rectangle
+		               |
+		               | 
+                      Box
+"""
+					   
 class Shape:
 	def __init__(self,dim1=0,dim2=0):
 		self.dim1=dim1
@@ -14,8 +24,7 @@ class Shape:
 		print("\nDimension 1:"+str(self.dim1),"\nDimension 2:"+str(self.dim2))
 
 
-
-###########################################################################
+""" ----------------------------------------------------------------- """ 
 
 
 class Rectangle(Shape):
@@ -26,9 +35,9 @@ class Rectangle(Shape):
 	def areaofRect(self):
 		self.area=self.dim1*self.dim2
 		print("Area of Rectangle:",self.area,"sq units")
+		
 
-
-###########################################################################
+""" ----------------------------------------------------------------- """ 
 
 
 class Box(Rectangle):

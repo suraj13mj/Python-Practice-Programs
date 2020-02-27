@@ -1,30 +1,4 @@
-"""
-Program to demonstrate Inheritance in Python with Student as Superclass and Marks as Subclass
-Single Inheritance
- 
-					Student
-					   ^
-					   |
-		               |
-		             Marks  
-"""
-
-class Student:
-	def __init__(self,rollno=0,name=" "):
-		self.__rollno=rollno
-		self.__name=name
-
-	def readStudent(self):
-		self.__rollno=int(input("Enter Student RollNo:"))
-		self.__name=input("Enter Student Name:")
-
-	def displayStudent(self):
-		print("\nRollNo:"+str(self.__rollno),"Name:"+self.__name,sep="\n")
-
-
-
-""" ----------------------------------------------------------------- """ 
-
+import Student
 
 class Marks(Student):
 	def __init__(self,rollno=0,name=" ",marks1=0,marks2=0):
@@ -33,7 +7,7 @@ class Marks(Student):
 		#super().__init__(rollno,name)
 		self.__marks1=marks1
 		self.__marks2=marks2
-		self.__total=self.__marks1+self.__marks2
+		self.__total=self.__marks1+self.__marks2f
 
 	def readMarks(self):
 		Student.readStudent(self)
