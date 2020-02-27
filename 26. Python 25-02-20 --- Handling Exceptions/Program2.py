@@ -8,7 +8,7 @@ except ValueError:
 	print("Invalid Input data")
 	x=y=z=0
 except ZeroDivisionError:
-	print("Error: Divide by Zero")
+	print("Error: Divide by Zero")sw
 	z=0
 
 print("Result:",z)
