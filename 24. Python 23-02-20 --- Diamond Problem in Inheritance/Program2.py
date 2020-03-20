@@ -32,7 +32,7 @@ class Student:
 
 class Marks(Student):
 	def __init__(self,rollno=0,name=" ",marks1=0,marks2=0):
-		super().__init__(rollno,name)
+		Student.__init__(self,rollno,name)
 		self.marks1=marks1
 		self.marks2=marks2
 
@@ -87,7 +87,6 @@ if __name__=="__main__":
 	N=int(input("Enter the No of Students:"))
 	stud=[]
 	for i in range(0,N):
-		print("1")
 		s=Result()
 		s.read()
 		stud.append(s)
