@@ -1,0 +1,5 @@
+Python Programming Language
+Python is the most popular programming language in the world
+It is easy to learn and implement
+Python has huge library support
+It has major usecase in trending technologies like AI and ML
