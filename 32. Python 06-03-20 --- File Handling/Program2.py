@@ -123,6 +123,6 @@ if __name__=="__main__":
 			eno=int(input("Enter Employee No to modify:"))
 			modifyEmployee(eno)
 
-		else:\
+		else:
 			break
 
