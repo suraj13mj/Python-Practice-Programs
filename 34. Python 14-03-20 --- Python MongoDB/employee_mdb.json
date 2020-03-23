@@ -1,0 +1,10 @@
+{"_id":{"$oid":"5e786b2e917fd0d9a82983e2"},"empno":101,"name":"Girish Hoshalli","salary":23000}
+{"_id":{"$oid":"5e786db8b3d6d6f5f5140872"},"empno":102,"name":"Anirban Mukharjee","salary":45000}
+{"_id":{"$oid":"5e786df8b3d6d6f5f5140873"},"empno":103,"name":"Abhishek Rathod","salary":56000}
+{"_id":{"$oid":"5e786e1558113890f0baf143"},"empno":104,"name":"Aishwarya Gaonker","salary":78000}
+{"_id":{"$oid":"5e786e2758113890f0baf144"},"empno":105,"name":"Nikhil Shastrinath","salary":12000}
+{"_id":{"$oid":"5e786e3758113890f0baf145"},"empno":106,"name":"Prasad Vernekar","salary":23000}
+{"_id":{"$oid":"5e786e514bc4e7f01ae18621"},"empno":107,"name":"Madhuri Jadhav","salary":67000}
+{"_id":{"$oid":"5e786e644bc4e7f01ae18622"},"empno":108,"name":"Rakshit Prasad","salary":25000}
+{"_id":{"$oid":"5e786e704bc4e7f01ae18623"},"empno":109,"name":"Shweta Shet","salary":56000}
+{"_id":{"$oid":"5e786e9c4bc4e7f01ae18625"},"empno":110,"name":"Rahul Nayak","salary":47000}
