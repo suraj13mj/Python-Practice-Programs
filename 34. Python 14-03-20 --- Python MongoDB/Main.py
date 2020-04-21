@@ -20,7 +20,7 @@ while True:
 
 	elif ch==4:
 		eno=int(input("Enter Empno to search:"))
-		lst=Emp_MongoDB.searchEmployee(eno)
+		Emp_MongoDB.searchEmployee(eno)
 
 	elif ch==5:
 		Emp_MongoDB.displayEmployees()
