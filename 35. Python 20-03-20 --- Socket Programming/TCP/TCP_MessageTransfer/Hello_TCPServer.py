@@ -1,4 +1,4 @@
-# Server program to demonstrate how to accept connection request from Client and send the appropriate message 
+# Server program to demonstrate how to accept connection request from Client and send the appropriate message using TCP protocol
 
 import socket, sys
 

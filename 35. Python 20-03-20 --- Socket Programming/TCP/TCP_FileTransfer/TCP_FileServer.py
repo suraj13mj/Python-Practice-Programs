@@ -1,4 +1,4 @@
-# Server program to demonstrate how to perform file transfer from Server
+# Server program to demonstrate how to perform file transfer from Server using TCP protocol
 # Server code
 
 import socket, sys

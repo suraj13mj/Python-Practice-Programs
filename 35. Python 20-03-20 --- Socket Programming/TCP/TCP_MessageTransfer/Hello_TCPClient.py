@@ -1,4 +1,4 @@
-# Client program to demonstrate how to send connection request to Server
+# Client program to demonstrate how to send connection request to Server using TCP protocol
 
 import socket
 

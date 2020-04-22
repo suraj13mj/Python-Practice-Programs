@@ -1,5 +1,5 @@
-#Program to display the HTTP Request Header in the console transmitted by the Browser to the Server
-#URL in the Browser : http://localhost:5000
+# Program to display the HTTP Request Header in the console transmitted by the Browser to the Server
+# URL in the Browser : http://localhost:5000
 
 import socket
 
