@@ -33,15 +33,24 @@ class StudentDetails(Tk):
         self.txt_usn = Entry(self, width=50)
         self.txt_usn.place(x=160,y=140,width=150,height=20)
 
+
+
+        #TextArea
+
         self.lbl_addr = Label(self, text="Address:", font=("Arial",15))
         self.lbl_addr.place(x=50,y=170,width=100,height=20)
 
         self.txt_addr = Text(self)
         self.txt_addr.place(x=160,y=170,width=150,height=80)
+
+
         
+
+        #RadioButtons
 
         self.lbl_sex = Label(self, text="Sex:    ", font=("Arial",15))
         self.lbl_sex.place(x=50,y=260,width=100,height=20)
+
 
         self.sexvar = IntVar()
 
@@ -59,6 +68,8 @@ class StudentDetails(Tk):
         self.female = Radiobutton(self,text="FEMALE",variable=self.sexvar,value=2,command=displaySex)
         self.female.place(x=270,y=260,width=100,height=30)
         
+
+
 
         self.lbl_clg = Label(self, text="College:", font=("Arial",15))
         self.lbl_clg.place(x=50,y=300,width=100,height=23)
@@ -85,6 +96,9 @@ class StudentDetails(Tk):
         self.colsdm.place(x=290,y=330,width=100,height=30)
         
 
+
+        #CheckBoxs
+
         self.lbl_edu = Label(self, text="Education:", font=("Arial",15))
         self.lbl_edu.place(x=50,y=370,width=100,height=20)
         
@@ -102,7 +116,6 @@ class StudentDetails(Tk):
         self.cb_sslc.place(x=50,y=400,width=100,height=30)
 
        
-            
 
         self.puc = IntVar()
 
@@ -143,6 +156,11 @@ class StudentDetails(Tk):
 
         self.cb_pg = Checkbutton(self,variable=self.pg,onvalue=1,offvalue=0,text="PG",command=displayPercentage)
         self.cb_pg.place(x=50,y=550,width=100,height=30)
+
+
+
+
+        #Buttons
 
         def onOkClicked():
             messagebox.showinfo("Info","Thank you for entering the details :"+self.txt_name.get())
