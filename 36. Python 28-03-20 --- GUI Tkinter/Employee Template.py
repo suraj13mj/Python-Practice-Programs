@@ -50,13 +50,6 @@ class Employee(Tk):
             gross = basic + hra + da
             tax = 0.30 * gross
             net = gross - tax
-
-            print("Basic:",basic)
-            print("DA:",da)
-            print("HRA:",hra)
-            print("Gross:",gross)
-            print("Tax:",tax)
-            print("Net:",net)
             
             self.txt_da.insert(0,str(da))
             self.txt_hra.insert(0,str(hra))
@@ -72,7 +65,7 @@ class Employee(Tk):
         self.txt_basic = Entry(self, width=50)
         self.txt_basic.place(x=160,y=270,width=150,height=20)
 
-        self.txt_basic.bind("<Return>",getSalary)
+        self.txt_basic.bind("<FocusOut>",getSalary)
 
         
 
@@ -94,21 +87,21 @@ class Employee(Tk):
         self.lbl_gross = Label(self, text="Gross Salary:", font=("Arial",13))
         self.lbl_gross.place(x=40,y=360,width=120,height=20)
 
-        self.txt_gross = Entry(self, width=50, state=DISABLED)
+        self.txt_gross = Entry(self, width=50)
         self.txt_gross.place(x=160,y=360,width=150,height=20)
 
 
         self.lbl_tax = Label(self, text="Income Tax:", font=("Arial",13))
         self.lbl_tax.place(x=40,y=390,width=120,height=20)
 
-        self.txt_tax = Entry(self, width=50, state=DISABLED)
+        self.txt_tax = Entry(self, width=50)
         self.txt_tax.place(x=160,y=390,width=150,height=20)
 
 
         self.lbl_net = Label(self, text="Net Salary:", font=("Arial",13))
         self.lbl_net.place(x=40,y=420,width=120,height=20)
 
-        self.txt_net = Entry(self, width=50, state=DISABLED)
+        self.txt_net = Entry(self, width=50)
         self.txt_net.place(x=160,y=420,width=150,height=20)
 
         
