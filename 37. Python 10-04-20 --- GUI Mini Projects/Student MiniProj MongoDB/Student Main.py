@@ -111,7 +111,8 @@ class StudentWindow(Tk):
             self.txt_name.delete(0,len(self.txt_name.get()))
             self.txt_roll.delete(0,len(self.txt_roll.get()))
             self.txt_addr.delete("1.0","end-1c")
-            self.cmb_college.clearselection()
+            self.cmb_college.current(0)
+            self.cmb_branch.current(0)
                 
         
         self.btnNew = Button(self,text="New",command=onNewClicked)

@@ -1,0 +1,10 @@
+{"_id":{"$oid":"5ea4dacc07029bb3bc1fed13"},"name":"Suraj M Janmane","roll":101,"address":"Gokul road,\nHubli","college":"PES","branch":"ECE","sex":"MALE","news":1}
+{"_id":{"$oid":"5ea4db1e07029bb3bc1fed14"},"name":"Ravindra Singh","roll":102,"address":"Kota,\nRajasthan","college":"SDM","branch":"CSE","sex":"MALE","news":1}
+{"_id":{"$oid":"5ea708e42197a244dd6ae68f"},"name":"Fenil Suchak","roll":103.0,"address":"Zuari,\nGoa","college":"RVCE","branch":"CSE","sex":"MALE","news":1}
+{"_id":{"$oid":"5ea709da2197a244dd6ae690"},"name":"Jayachandra Naik","roll":104,"address":"Vellore,\nTamil Nadu","college":"SDM","branch":"ISE","sex":"MALE","news":0}
+{"_id":{"$oid":"5ea70a062197a244dd6ae691"},"name":"Vijay Tulsalkar","roll":105,"address":"Ghaziabad,\nUttar Pradesh","college":"BVB","branch":"Robotics","sex":"MALE","news":1}
+{"_id":{"$oid":"5ea70a332197a244dd6ae692"},"name":"Madhuri Vernekar","roll":106,"address":"Shivamogga,\nKarnataka","college":"RVCE","branch":"CSE","sex":"FEMALE","news":0}
+{"_id":{"$oid":"5ea70a732197a244dd6ae693"},"name":"Paresh Kamat","roll":107,"address":"Mumbai,\nMaharashtra","college":"MSRIT","branch":"Aerospace","sex":"MALE","news":1}
+{"_id":{"$oid":"5ea70a912197a244dd6ae694"},"name":"Meghana Kini","roll":108,"address":"Puttur,\nKarnataka","college":"PES","branch":"ISE","sex":"FEMALE","news":0}
+{"_id":{"$oid":"5ea70ab42197a244dd6ae695"},"name":"Neil Obrien","roll":109,"address":"Rajkot,\nGujarat","college":"IIT-D","branch":"Mech","sex":"MALE","news":1}
+{"_id":{"$oid":"5ea70ae32197a244dd6ae696"},"name":"Vidhi Mehta","roll":110,"address":"Pushkar,\nRajasthan","college":"PES","branch":"Robotics","sex":"FEMALE","news":1}
