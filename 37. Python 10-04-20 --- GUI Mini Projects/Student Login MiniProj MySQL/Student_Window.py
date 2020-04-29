@@ -9,7 +9,7 @@ import StudentDB
 
 
 class StudentWindow(Tk):
-    def __init__(self):
+    def __init__(self,login_win,stud):
         super().__init__()
         self.geometry("450x700")
         self.title("Student Information")
@@ -45,20 +45,20 @@ class StudentWindow(Tk):
         self.lbl_sex = Label(self, text="Sex:    ", font=("Arial",15))
         self.lbl_sex.place(x=50,y=260,width=100,height=20)
 
-        self.sexvar = IntVar()
+        self.sexVar = IntVar()
 
         def displaySex():
             st = ""
-            if self.sexvar.get() == 1:
+            if self.sexVar.get() == 1:
                 st = "Male"
-            elif self.sexvar.get() == 2:
+            elif self.sexVar.get() == 2:
                 st = "Female"
             messagebox.showinfo("Info",st+" selected")
 
-        self.male = Radiobutton(self,text="MALE",variable=self.sexvar,value=1,command=displaySex)
+        self.male = Radiobutton(self,text="MALE",variable=self.sexVar,value=1,command=displaySex)
         self.male.place(x=160,y=260,width=100,height=30)
 
-        self.female = Radiobutton(self,text="FEMALE",variable=self.sexvar,value=2,command=displaySex)
+        self.female = Radiobutton(self,text="FEMALE",variable=self.sexVar,value=2,command=displaySex)
         self.female.place(x=270,y=260,width=100,height=30)
 
 
@@ -113,7 +113,6 @@ class StudentWindow(Tk):
             self.txt_addr.delete("1.0","end-1c")
             self.cmb_college.current(0)
             self.cmb_branch.current(0)
-            
                 
         
         self.btnNew = Button(self,text="New",command=onNewClicked)
@@ -128,7 +127,7 @@ class StudentWindow(Tk):
         	stud.Address = self.txt_addr.get("1.0","end-1c")
         	stud.College = self.cmb_college.get()
         	stud.Branch = self.cmb_branch.get()
-        	if self.sexvar.get() == 1:
+        	if self.sexVar.get() == 1:
         		stud.Sex = "MALE"
         	else:
         		stud.Sex = "FEMALE"
@@ -152,10 +151,3 @@ class StudentWindow(Tk):
         self.btnExit = Button(self,text="Exit",command=onExitClicked)
         self.btnExit.place(x=295,y=460,width=100,height=50)
 
-        
-
-
-
-if __name__ == "__main__":
-    stud_win = StudentWindow()
-    stud_win.display()

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2020 at 06:28 PM
+-- Generation Time: Apr 29, 2020 at 01:27 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.1
 
@@ -21,6 +21,42 @@ SET time_zone = "+00:00";
 --
 -- Database: `tkinter_student`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `registration`
+--
+
+CREATE TABLE `registration` (
+  `username` varchar(30) NOT NULL,
+  `password` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `registration`
+--
+
+INSERT INTO `registration` (`username`, `password`) VALUES
+('ravindra', '1234'),
+('samit', '1234'),
+('ishita', '1234'),
+('sudarshan', '1234'),
+('kiran', '1234'),
+('laxman', '1234'),
+('jaya', '1234'),
+('mamata', '1234'),
+('rahul', '1234'),
+('sagar', '1234'),
+('geeta', '1234'),
+('manish', '1234'),
+('alok', '1234'),
+('praneeth', '1234'),
+('yogesh', '1234'),
+('zayida', '1234'),
+('kalim', '1234'),
+('ignatius', '1234'),
+('tejus', '1234');
 
 -- --------------------------------------------------------
 
@@ -52,7 +88,16 @@ INSERT INTO `student` (`name`, `rollno`, `address`, `college`, `branch`, `sex`, 
 ('Jaya Reddy', 107, 'Vishakhapatnam,\nAndhra Pradesh', 'IIT-D', 'Civil', 'FEMALE', 0),
 ('Mamata Vijayan', 108, 'Hyderabad,\nTelengana', 'MSRIT', 'EEE', 'FEMALE', 1),
 ('Rahul Porwal', 109, 'Ranchi,\nJharkhand', 'PES', 'Robotics', 'MALE', 0),
-('Sagar Pai', 110, 'Bangalore,\nKarnataka', 'KLEIT', 'ECE', 'MALE', 1);
+('Sagar Pai', 110, 'Bangalore,\nKarnataka', 'KLEIT', 'ECE', 'MALE', 1),
+('Geeta Janmane', 111, 'H.no-45,\nThane,\nMaharashtra\n670003', 'RVCE', 'CSE', 'FEMALE', 0),
+('Manish Malhotra', 112, 'Avenue Street 121\nNew York\nUSA\n196357', 'IIT-D', 'Aerospace', 'MALE', 0),
+('Alok Nath', 113, 'Vilas Nagar,\nPalghar,\nMaharashtra\n680014', 'SDM', 'ECE', 'MALE', 1),
+('Praneeth Shenoy', 114, 'Suratkal,\nMangalore,\nKarnataka\n530142', 'MSRIT', 'Civil', 'MALE', 1),
+('Yogesh Jain', 115, 'Hubli,\nKarnataka', 'AGMR', 'Telecom', 'MALE', 1),
+('Zayida Sheikh', 116, 'Mannat,\nJeddah,\nSaudi Arabia', 'RVCE', 'Mech', 'FEMALE', 0),
+('Kalim Khan', 117, 'Powai,\nMumabai\nMaharashtra\n650003', 'PES', 'Civil', 'MALE', 1),
+('Ignatius Fernandiz', 118, 'Hubli,\nKarnataka', 'AGMR', 'EEE', 'MALE', 1),
+('Tejas Bellad', 119, 'Hubli,\nKarnataka', 'BVB', 'Civil', 'MALE', 0);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

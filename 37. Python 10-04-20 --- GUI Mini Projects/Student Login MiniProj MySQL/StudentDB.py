@@ -21,6 +21,19 @@ def insertStudent(stud):
     db.commit()
     return True
 
+def checkPassword(stud):
+ 	sql = "SELECT * FROM registration WHERE username='"+stud.Username+"' and password='"+stud.Password+"'"
+ 	cur.execute(sql)
+ 	rows = cur.fetchall()
+ 	db.commit()
+ 	return rows
+
+def insertLoginDetails(stud):
+    sql = "INSERT INTO registration VALUES ('"+stud.Username+"','"+stud.Password+"')"                                
+    cur.execute(sql)
+    db.commit()
+    return True
+
 
 
 """

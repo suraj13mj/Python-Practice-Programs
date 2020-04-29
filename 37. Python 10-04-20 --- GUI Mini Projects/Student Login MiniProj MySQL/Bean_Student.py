@@ -1,5 +1,5 @@
 class Student:
-    def __init__(self,name='',rollno=0,address='',college='',branch='',sex='',news=0):
+    def __init__(self,name='',rollno=0,address='',college='',branch='',sex='',news=0,username="",password=""):
         self.__rollno = rollno
         self.__name = name
         self.__address = address
@@ -7,6 +7,8 @@ class Student:
         self.__branch = branch
         self.__sex = sex
         self.__news = news
+        self.__username = username
+        self.__password = password
 
     @property
     def Rollno(self):
@@ -56,5 +58,19 @@ class Student:
     @News.setter
     def News(self,news):
         self.__news = news
+
+    @property
+    def Username(self):
+        return self.__username
+    @Username.setter
+    def Username(self,username):
+        self.__username = username
+
+    @property
+    def Password(self):
+        return self.__password
+    @Password.setter
+    def Password(self,password):
+        self.__password = password
 
     
