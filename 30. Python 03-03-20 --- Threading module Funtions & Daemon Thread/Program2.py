@@ -3,14 +3,14 @@
 import threading, time
 
 def Task1():
-	print("Start of Task1:",threading.currentThread().name)
+	print("Start of Task1:"+threading.currentThread().name)
 	time.sleep(0.1)
-	print("End of Task1:",threading.currentThread().name)
+	print("End of Task1:"+threading.currentThread().name)
 
 def Task2():
-	print("Start of Task2:",threading.currentThread().name)
+	print("Start of Task2:"+threading.currentThread().name)
 	time.sleep(0.1)
-	print("End of Task2:",threading.currentThread().name)
+	print("End of Task2:"+threading.currentThread().name)
 
 
 if __name__=="__main__":
