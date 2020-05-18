@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+	<TITLE>Home Page</TITLE>
+	<BODY>
+		<H1> Welcome to the Test Page</H1>
+		{% for x in range(10) %}
+			{% if x % 2 == 0 %}
+				<p> EVEN {{x}}  </p>
+			{% else %}
+				<p> ODD {{x}} </p>
+			{% endif %}
+		{% endfor%}
+		<p>{{content}}</p>
+	</BODY>
+</HEAD>
+</HTML> 
