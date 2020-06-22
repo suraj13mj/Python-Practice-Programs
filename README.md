@@ -1,6 +1,3 @@
-Python Practice.md
-Python Practice.md
-▲
 # Python Practice Programs.
 Below are the list of basic programs that I practiced while learning the Python Programming Language. It was during this time I started #30DaysOfCoding challenge and practiced Python continuously for 30 days.
 
@@ -64,4 +61,3 @@ Below is the list of organised basic Python Programs
 37. NumPy
 38. Python RegEx
 39. Flask Basics
-Markdown 2045 bytes 338 words 63 lines Ln 8, Col 0HTML 1541 characters 278 words 62 paragraphs
